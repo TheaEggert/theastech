@@ -1,0 +1,94 @@
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #161B22;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.wordWrap {
+  word-wrap: break-word;      /* IE 5.5-7 */
+    white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+    white-space: pre-wrap;      /* current browsers */
+}
+
+.logo{
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  padding-left: 20px;
+  text-decoration: none;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+/* Change the color of links on hover */
+.logo:hover{
+  color: gray
+}
+
+.topnav-right{
+  float: right;
+  padding-top: 30px;
+  padding-right: 20px;
+}
+
+.topnav-right a{
+  color: #7c7c7c;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.topnav-right a:hover{
+  color:#f2f2f2;
+}
+
+/* Add a color to the active/current link */
+.topnav-right a.active{
+  color:#f2f2f2;
+}
+
+/* Eliminates gap between top of screen and navbar */
+body {
+  margin: 0px;
+}
+
+.main {
+  font-weight: bold;
+  text-align: center;
+}
+
+.profile_pic {
+  padding-top: 100px;
+  width: 307px;
+  height: 173px;
+}
+
+.goku_confused {
+  width: 512px;
+  height: 288px;
+}
+
+.goku_bummed {
+  padding-top: 100px;
+  width: 417px;
+  height: 234px;
+}
+
+.dimmed {
+  color: #7c7c7c;
+}
+
+.welcome {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  /*todo: implement a sidebar if site is mobile, since it is mostly vertical room on mobile devices*/
+  /* @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }  */

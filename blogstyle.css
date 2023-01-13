@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  padding: 20px;
+  background: #0D1117;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #161B22;
+  /* padding:0px; */
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.logo{
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  padding-left: 20px;
+  text-decoration: none;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+/* Change the color of links on hover */
+.logo:hover{
+  color: gray
+}
+
+.topnav-right{
+  float: right;
+  padding-top: 30px;
+  padding-right: 20px;
+}
+
+.topnav-right a{
+  color: #7c7c7c;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.topnav-right a:hover{
+  color:#f2f2f2;
+}
+
+/* Add a color to the active/current link */
+.topnav-right a.active{
+  color:#f2f2f2;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+.sideimg{
+  background-color: #aaa;
+  width: 25%;
+  float:right;
+  padding-bottom: 50px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: #161B22;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.yo{
+  text-decoration: none;
+  color:white;
+}
+
+.yo:hover > .card{
+  background-color: grey;
+}
+
+/* Color the HTML links and deformat default underlining */
+.link {
+  color:#f2f2f2;
+  text-decoration: none;
+}
+
+a.link:hover{
+  color:#7c7c7c
+}
+
+.dimmed {
+  color: #7c7c7c;
+}
+
+a.dimmed:hover{
+  color:#f2f2f2;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
